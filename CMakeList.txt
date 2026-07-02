@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.20)
+project(GammaViewer LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(GammaViewer
+    gamma.cpp
+)
+
+# Win32 subsystem
+target_link_options(GammaViewer PRIVATE "/SUBSYSTEM:WINDOWS")
+
+# Windows libraries
+target_link_libraries(GammaViewer PRIVATE
+    user32
+    gdi32
+    comctl32
+)
