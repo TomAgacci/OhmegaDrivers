@@ -1,3 +1,5 @@
+WARNING: Don't use this to disable the exe.
+
 How to run it from WSL
 WSL cannot directly call Win32 APIs, but it can trigger Windows Python:
 
