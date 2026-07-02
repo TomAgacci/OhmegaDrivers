@@ -1,0 +1,8 @@
+GammaWinUI/
+ ├─ CMakeLists.txt
+ ├─ App.xaml
+ ├─ App.xaml.cpp
+ ├─ MainWindow.xaml
+ ├─ MainWindow.xaml.cpp
+ ├─ Gamma.cpp (gamma ramp logic)
+ └─ Gamma.h
