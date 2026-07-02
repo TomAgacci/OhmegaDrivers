@@ -1,0 +1,2 @@
+HTRANSFORM hXform = CreateColorTransform(
+    &inputProfile, &outputProfile, NULL, 0);
