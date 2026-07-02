@@ -1,0 +1,3 @@
+GammaMultiMonitor/
+ ├─ CMakeLists.txt
+ └─ main.cpp
