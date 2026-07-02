@@ -1,0 +1,4 @@
+WCS_PROFILE_MANAGEMENT_SCOPE scope = WCS_PROFILE_MANAGEMENT_SCOPE_SYSTEM_WIDE;
+WCHAR profileName[MAX_PATH];
+DWORD size = sizeof(profileName);
+WcsGetDefaultColorProfile(scope, NULL, CPT_ICC, CS_DEVICE, profileName, &size);
