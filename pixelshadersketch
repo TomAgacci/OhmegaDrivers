@@ -1,0 +1,12 @@
+cbuffer GammaRamp : register(b0)
+{
+    float3 Ramp[256]; // R,G,B in 0..1
+};
+
+float4 main_ps(float4 pos : SV_Position) : SV_Target
+{
+    float x = pos.x / ScreenWidth;      // 0..1
+    int idx = clamp(int(x * 256.0), 0, 255);
+    float3 c = Ramp[idx];
+    return float4(c, 1.0);
+}
