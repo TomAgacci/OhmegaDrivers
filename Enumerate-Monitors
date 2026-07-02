@@ -1,0 +1,8 @@
+DISPLAY_DEVICE dd = { sizeof(dd) };
+for (DWORD i = 0; EnumDisplayDevices(NULL, i, &dd, 0); ++i)
+{
+    if (dd.StateFlags & DISPLAY_DEVICE_ACTIVE)
+    {
+        // dd.DeviceName -> use with CreateDC
+    }
+}
