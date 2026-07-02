@@ -1,4 +1,4 @@
-WARNING: Don't use disable_ohmega.py to disable the exe.
+WARNING: Don't use disable_ohmega.py to disable the exe; do not use exekillswitch.py to disable ohmega-python
 
 How to run it from WSL
 WSL cannot directly call Win32 APIs, but it can trigger Windows Python:
