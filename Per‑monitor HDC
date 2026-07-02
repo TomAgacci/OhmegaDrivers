@@ -1,0 +1,3 @@
+HDC hdc = CreateDC(NULL, dd.DeviceName, NULL, NULL);
+WORD ramp[3][256];
+GetDeviceGammaRamp(hdc, ramp);
